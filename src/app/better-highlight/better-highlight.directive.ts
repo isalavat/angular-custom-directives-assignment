@@ -3,7 +3,7 @@ import {Directive, ElementRef, HostBinding, HostListener, Input, Renderer2} from
  * @source - https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/content
  * (Angular Course on Udemy.com)
  * Directive changing the background color of html block (element)
- * @author salavat
+ * @made_by Salavat
  */
 @Directive({
   selector: '[appBetterHighlight]'

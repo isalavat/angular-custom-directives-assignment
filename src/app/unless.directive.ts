@@ -4,7 +4,7 @@ import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
  * (Angular Course on Udemy.com)
  * Directive changing (creating) the html element by outputting odd or even numbers
  * with appropriate background color based on condition
- * @author salavat
+ * @made_by Salavat
  */
 @Directive({
   selector: '[appUnless]'

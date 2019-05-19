@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
  * Simple component containing arrays of even and odd numbers.
  * Also containing some properties for working with the custom
  * directives
- * @author salavat
+ * @made_by Salavat
  */
 @Component({
   selector: 'app-root',
