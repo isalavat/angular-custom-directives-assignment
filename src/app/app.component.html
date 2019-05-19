@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-3">
+      <button class="btn btn-primary" (click)="showOnlyOddNumbers = !showOnlyOddNumbers">Show only odd numbers</button>
+    </div>
+  </div>
+  <div class="row">
+  <div class = "col-xs-3" *appUnless="showOnlyOddNumbers">
+    <div class="panel panel-default">
+      <div class="panel-heading">Even numbers</div>
+      <div class="panel-body" *ngFor="let evenNumber of evenNumbers">{{evenNumber}}</div>
+    </div>
+  </div>
+  <div class = "col-xs-3" *appUnless="!showOnlyOddNumbers">
+    <div class="panel panel-default">
+      <div class="panel-heading">Odd numbers</div>
+      <div class="panel-body" *ngFor="let oddNumber of oddNumbers" [ngClass]="{odd:showOnlyOddNumbers}">{{oddNumber}}</div>
+    </div>
+  </div>
+  <div class="col-xs-12" [ngStyle]="{'background-color' : 'transparent'}" >
+    <p>Simple paragraph!</p>
+  </div>
+   <div class="col-xs-12" appBetterHighlight [defaultColor]="'red'" [highlightColor]="'green'">
+     <p>Simple paragraph 2!</p>
+   </div>
+    <div class="col-xs-3" [ngSwitch]="value">
+      <p *ngSwitchCase="1" >1</p>
+      <p *ngSwitchCase="2" >2</p>
+      <p *ngSwitchCase="3" >3</p>
+    </div>
+  </div>
+
+</div>
+
